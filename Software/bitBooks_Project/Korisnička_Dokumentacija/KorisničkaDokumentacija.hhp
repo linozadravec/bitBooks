@@ -1,0 +1,13 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=KorisnièkaDokumentacija.chm
+Contents file=Sadržaj.hhc
+Default topic=Uvod.htm
+Display compile progress=No
+Index file=Index.hhk
+Language=0x41a Croatian (Croatia)
+Title=KorisnièkaDokumentacija
+
+
+[INFOTYPES]
+

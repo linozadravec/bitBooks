@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="549e24bc2bf44c23b62e59e4e0d2bd02" Name="Diagram1" ZoomLevel="109">
+        <EntityTypeShape EntityType="Model.Author" Width="1.5" PointX="5.25" PointY="15" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Book" Width="1.5" PointX="7.5" PointY="16.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.City" Width="1.5" PointX="5.25" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Department" Width="1.5" PointX="7.5" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Genre" Width="1.5" PointX="5.25" PointY="18" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Library" Width="1.5" PointX="5.25" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.LibraryUser" Width="1.5" PointX="3" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Loan" Width="1.5" PointX="12" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.News" Width="1.5" PointX="7.5" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Publisher" Width="1.5" PointX="7.5" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Publishing" Width="1.5" PointX="9.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Reservation" Width="1.5" PointX="15" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.ReviewEmployee" Width="1.5" PointX="5.25" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.ReviewLibrary" Width="1.5" PointX="5.25" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.UserType" Width="1.5" PointX="0.75" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Wrote" Width="1.5" PointX="7.5" PointY="19.375" IsExpanded="true" />
+        <AssociationConnector Association="Model.Wrote_AuthorID_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.Book_GenreID_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Publishing_Book" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Department_City" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Department_Library" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Publishing_Department" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_News_LibraryID_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.Library_Administrator_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.LibraryUser_LibraryID_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Reservation_LibraryUser" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.LibraryUser_TypeID_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.Loan_UserID_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.ReviewEmployee_EmployeeID_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.ReviewEmployee_UserID_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.ReviewLibrary_UserID_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.Loan_PublishingID_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Publishing_Publisher" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Reservation_Publishing" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_ReviewLibrary_ReviewLibrary" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.WroteBook" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="Model.Notification" Width="1.5" PointX="0.75" PointY="0.75" />
+        <AssociationConnector Association="Model.Notifications_UserID_FK" />
+        <EntityTypeShape EntityType="Model.Request" Width="1.5" PointX="5.25" PointY="21.125" />
+        <AssociationConnector Association="Model.Request_EmployeeID_FK" />
+        <AssociationConnector Association="Model.Request_UserID_FK" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
